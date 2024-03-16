@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Poppins&display=swap');
+
+:root {
+    --primary-hue: #04243D;
+    --text-color: #ffffff;
+    --second-hue: #e8e8e8;
+    --elements-hue: #242526;
+    --system-fonts: Poppins, San-serif;
+
+    --darkmode-hue: #121212;
+    --darkmode-text: #d1d1cf;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--system-fonts);
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+    background: transparent; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: transparent; 
+}
+
+body {
+    background-color: var(--primary-hue);
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: mandatory;
+    cursor: pointer;
+}
+
+
+.container {
+    color: var(--elements-hue);
+    transition: 1s ease;
+    overflow: hidden;
+}
+.container img {
+    width: 120px;
+}
+.container h2 {
+    margin: 1rem 0;
+}
+.header {
+    justify-content: center;
+    text-align: center;
+}
+.index {
+    border-bottom: solid thin var(--darkmode-text);
+}
+.card {
+    border: solid thin var(--darkmode-text);
+}
+.modal-body label {
+    font-weight: 600;
+}

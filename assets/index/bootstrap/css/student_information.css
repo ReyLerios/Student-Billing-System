@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Poppins&display=swap');
+
+:root {
+    --primary-hue: #04243D;
+    --text-color: #ffffff;
+    --second-hue: #e8e8e8;
+    --elements-hue: #242526;
+    --system-fonts: Poppins, San-serif;
+
+    --darkmode-hue: #121212;
+    --darkmode-text: #d1d1cf;
+}
+
+.container {
+    color: var(--elements-hue);
+    transition: 1s ease;
+    overflow: hidden;
+}
+.container img {
+    width: 200px;
+}
+.container label {
+    font-weight: 500;
+}
+
+.header {
+    justify-content: center;
+    text-align: center;
+}
+em {
+    color: grey;
+}
+.asterisk {
+    color: #cc0000;
+    font-weight: 500;
+}
+.index {
+    border-bottom: solid thin var(--darkmode-text);
+}

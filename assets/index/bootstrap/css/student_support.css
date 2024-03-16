@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Poppins&display=swap');
+:root {
+    --primary-hue: #04243D;
+    --text-color: #ffffff;
+    --second-hue: #e8e8e8;
+    --elements-hue: #242526;
+    --system-fonts: Poppins, San-serif;
+    --darkmode-hue: #121212;
+    --darkmode-text: #d1d1cf;
+
+}
+
+input[type=submit] {
+  padding: 12px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 5px;
+  border: solid thin transparent;
+  background-color: var(--elements-hue);
+  color: var(--text-color);
+}

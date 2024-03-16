@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Poppins&display=swap');
+
+:root {
+    --primary-hue: #04243D;
+    --text-color: #ffffff;
+    --second-hue: #e8e8e8;
+    --elements-hue: #242526;
+    --system-fonts: Poppins, San-serif;
+    --darkmode-hue: #121212;
+    --darkmode-text: #d1d1cf;
+}
+
+.darkmode {
+    background-color: var(--darkmode-hue);
+    color: var(--darkmode-text);
+    transition: .5 ease;
+
+    .wrapper {
+        background-color: var(--darkmode-hue);
+        color: var(--darkmode-text);
+        transition: .5s ease;
+    }
+    .row {
+        background-color: transparent;
+        transition: 1s ease;
+        border: solid thin var(--elements-hue);
+    }
+    img {
+        opacity: 0;
+    }
+    .dim {
+        opacity: 1;
+    }
+    .iform h1, .iform p {
+        color: var(--darkmode-text);
+    }
+    .input {
+        border-bottom: solid thin var(--elements-hue);
+    }
+    .text-field .input:focus, .text-field .input:valid {
+        border-bottom: solid thin var(--elements-hue);
+        color: var(--darkmode-text);
+    }
+    .text-field input:valid ~ label {
+        color: transparent;
+    }
+    input[type=submit] {
+        background-color: var(--elements-hue);
+        color: var(--darkmode-text);
+    }
+    input[type=submit]:hover {
+        background-color: var(--darkmode-text);
+        color: var(--elements-hue);
+    }
+}

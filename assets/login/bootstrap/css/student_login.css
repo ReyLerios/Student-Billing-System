@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Poppins&display=swap');
+
+:root {
+    --primary-hue: #04243D;
+    --text-color: #ffffff;
+    --second-hue: #e8e8e8;
+    --elements-hue: #242526;
+    --system-fonts: Poppins, San-serif;
+    --darkmode-hue: #121212;
+    --darkmode-text: #d1d1cf;
+}
+
+* {
+  font-family: var(--system-fonts);
+}
+html {
+  background-color: var(--primary-hue);
+}
+img {
+  width: 400px;
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  transition: 2s ease;
+  opacity: 1;
+}
+.dim {
+    width: 400px;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    transition: 2s ease;
+    opacity: 0;
+}
+
+/* student login */
+
+.wrapper {
+    background: var(--primary-hue);
+    padding: 0 20px 0 20px;
+    transition: 5s;
+}
+.authentication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: 2.5s ease;
+}
+.logo {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px 0 0 8px;
+    position: relative;
+}
+.row {
+    width: 900px;
+    height: 550px;
+    border: solid thin transparent;
+    border-radius: 10px;
+    background: var(--text-color);
+    padding: 0;
+    transition: 2.5s ease;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text p {
+    color: var(--text-color);
+    font-size: 20px;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.iform {
+    width: 330px;
+    box-sizing: border-box;
+}
+.iform h1 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+    color: var(--elements-hue);
+    font-size: 18px;
+}
+p {
+    text-align: center;
+    color: var(--elements-hue);
+    font-size: 14px;
+}
+.text-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+.input {
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: solid thin rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: var(--primary-hue);
+}
+.form .text-field label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: 1s ease;
+}
+.text-field input:focus ~ label {
+    top: -10px;
+    font-size: 13px;
+}
+.text-field input:valid ~ label {
+    top: -10px;
+    font-size: 13px;
+    color: var(--primary-hue);
+}
+.text-field input:focus, .text-field input:valid {
+    border-bottom: 1px solid var(--primary-hue);
+}
+input[type=submit] {
+    background-color: var(--primary-hue);
+    width: 328px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    border: none;
+    border-radius: 3px;
+    color: var(--text-color);
+}
+input[type=submit]:hover {
+    background-color: var(--elements-hue);
+    width: 328px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    border: none;
+    border-radius: 3px;
+    color: var(--text-color);
+    transition: .5s ease;
+}
+input[type=submit]:active {
+    background-color: var(--primary-hue);
+    width: 328px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    border: none;
+    border-radius: 3px;
+    color: var(--text-color);
+}
+.checkbox {
+    width: 300px;
+    margin: 100px auto;
+}
+.form-switch {
+    margin: 1em 0;
+    position: absolute;
+    padding: 5px 8px 3px 5px;
+}
+.form-switch label {
+    color: var(--elements-hue);
+}

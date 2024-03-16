@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Student Portal
+    </title>
+    <link href="assets/img/sclogo.webp" rel="icon">
+    <link href="assets/login/bootstrap/css/student_login.css" rel="stylesheet">
+    <link href="assets/login/bootstrap/css/student_login_darkmode.css" rel="stylesheet">
+    <link href="assets/login/bootstrap/css/student_login_mediascreen.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+          crossorigin="anonymous">
+</head>
+<body>
+    <form action="student_information.html">
+        <div class="wrapper">
+            <div class="container authentication">
+                <div class="row">
+
+                    <div class="col-md-6 logo">
+                        <img src="assets/img/light.jpg" alt="left side login image">
+                        <img src="assets/img/night.jpg" alt="left side login image" class="dim">
+                    </div>
+
+                    <div class="col-md-6 form">
+                        <div class="iform">
+                            <h1>ST. CLARE COLLEGE OF CALOOCAN</h1>
+                            <p>STUDENT PORTAL</p>
+                        <div class="text-field">
+                            <input type="text" class="input" autocomplete="off" required>
+                            <label for="email">Student Number</label>
+                        </div>
+
+                        <div class="text-field">
+                            <input type="password" class="input" required>
+                            <label for="pass">Password</label>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Login">
+                        </div>
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" id="checkbox" onclick="Mode()">
+                            <label class="form-check-label" for="checkbox">Dark Mode</label>
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        if (localStorage.getItem('theme') == 'dark') {
+            Mode();
+
+            if (document.getElementById('checkbox').checked) {
+                localStorage.setItem('checkbox', true);
+            }
+        }
+
+        function Mode() {
+            let night = document.body.classList.toggle('darkmode');
+
+            if (night) {
+                Mode.checked = true;
+                localStorage.setItem('theme', 'dark');
+                document.getElementById('checkbox').setAttribute('checked', 'checked');
+            }
+            else {
+                Mode.checked = true;
+                localStorage.removeItem('theme', 'dark');
+            }
+        }
+    </script>
+</body>
+</html>

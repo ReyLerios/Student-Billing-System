@@ -19,3 +19,6 @@ input[type=submit] {
   background-color: var(--elements-hue);
   color: var(--text-color);
 }
+.logo {
+    justify-content: center;
+}
